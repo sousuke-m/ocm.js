@@ -1,0 +1,15 @@
+.newest_version{
+    background-color: blue;
+    display: grid;
+    justify-items: center;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    text-decoration-style: none;
+}
+.newest_version h1 {
+    color: #fff;
+    text-decoration-style: none;
+    margin: 0;
+    font-size: 2em;
+}
