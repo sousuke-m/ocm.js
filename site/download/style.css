@@ -7,6 +7,7 @@
     height: 100px;
     color: #fff;
     text-decoration-style: none;
+    border: 1px solid #000;
 }
 .newest_version h1,
 .newest_version_min h1 {
@@ -14,4 +15,15 @@
     text-decoration-style: none;
     margin: 0;
     font-size: 2em;
+}
+.newest_version {
+    margin-right: 1px;
+}
+.newest_version_min {
+    margin-left: 1px;
+}
+.main_version {
+    display: block;
+    align-items: center;
+    flex-direction: row;
 }
