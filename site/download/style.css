@@ -1,4 +1,5 @@
-.newest_version{
+.newest_version,
+.newest_version_min {
     background-color: blue;
     display: grid;
     justify-items: center;
@@ -7,7 +8,8 @@
     color: #fff;
     text-decoration-style: none;
 }
-.newest_version h1 {
+.newest_version h1,
+.newest_version_min h1 {
     color: #fff;
     text-decoration-style: none;
     margin: 0;
