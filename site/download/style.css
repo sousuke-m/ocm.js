@@ -7,7 +7,6 @@
     height: 100px;
     color: #fff;
     text-decoration-style: none;
-    border: 1px solid #000;
 }
 .newest_version h1,
 .newest_version_min h1 {
@@ -16,14 +15,26 @@
     margin: 0;
     font-size: 2em;
 }
-.newest_version {
+.newest_version_link {
     margin-right: 1px;
 }
-.newest_version_min {
+.newest_version_min_link {
     margin-left: 1px;
 }
 .main_version {
-    display: block;
+    display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: center;
+}
+.newest_version_min_link,
+.newest_version_link {
+    background-color: blue;
+    display: grid;
+    justify-items: center;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    text-decoration-style: none;
+    border: 1px solid #000;
 }
