@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v1.0.0またはv1.0.0 mini|使い方|OCM.js</title>
+    <link rel= "stylesheet" href="../Prism_js/prism.css">
+    <script src="../Prism_js/prism.js"></script>
+    <script src="ocm.js"></script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 1000%;
+            margin: 0;
+        }
+        #ocm_context_menu {
+            border: 1px solid #000;
+            position: fixed;
+            z-index: 99999;
+            background-color: #fff;
+            display: none;
+        }
+        #ocm_context_menu ul,
+        #ocm_context_menu ul li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <div id="ocm_context_menu">
+        <p>このページは<br>OCM.js(v1.0.0またはv1.0.0 mini)の<br>使い方(サンプルコード付き)<br>を説明しています。</p>
+        <ul>
+            <li onclick="document.execCommand('copy');">コピー(Ctrl + C)</li>
+            <li onclick="document.execCommand('paste');">ペースト(Ctrl + V)</li>
+            <li onclick="location.href = '/ocm.js/site/download/index.html';">OCM.jsのダウンロード</li>
+            <li>OCM.jsバージョン:<span id="ocm-js-v">OCM.js読み込み中...</span></li>
+        </ul>
+    </div>
+    <a href="../index.html">戻る</a>
+    <h1>OCM.js v1.0.0/1.0.0 mini 使い方</h1>
+    <h2>利用するための3ステップ</h2>
+    <p>1.必ずheadの中に以下のコードを入力してください</p>
+    <pre data-src="code/script-src/index.html" class="line-numbers" data-prismjs-copy="コピー" data-download-link data-download-link-label="ダウンロード"></pre>
+    <p>2.bodyのoncontextmenuをreturn false;にしてください</p>
+    <pre class="line-numbers" data-prismjs-copy="コピー" data-download-link data-download-link-label="ダウンロード"><code class="language-html">&lt;body oncontextmenu="return false;"&gt;&lt;/body&gt;</code></pre>
+    <p>3.ocm_context_menuのidが付いたコンテキストメニューの中身を作成してください</p>
+    <pre data-src="code/context-menu/index.html" class="line-numbers" data-prismjs-copy="コピー" data-download-link data-download-link-label="ダウンロード"></pre>
+    <h2>まとめたサンプル</h2>
+    <p><a href="code/sample/index.html" target="_blank">新しいタブで開く</a></p>
+    <pre data-src="code/sample/index.html" class="line-numbers" data-prismjs-copy="コピー" data-download-link data-download-link-label="ダウンロード"></pre>
+    <p><a href="code/sample/index.html" download="index.html">ダウンロード</a></p>
+</body>
+</html>

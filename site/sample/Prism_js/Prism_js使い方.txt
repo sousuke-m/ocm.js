@@ -1,0 +1,47 @@
+Prism.js使い方
+
+<link rel= "stylesheet" href="/hikarijima/programming/Prism_js/prism.css">
+<script src="/hikarijima/programming/Prism_js/prism.js"></script>
+<pre><code class="language-Markup">
+<p>ソースコード例１</p>
+<p>ソースコード例２</p>
+</code></pre>
+
+行番号表示
+<pre class="line-numbers">
+
+行ハイライト
+1行目:1
+1から2行目:1-2
+1行目と3行目:1,3
+1行目から2行目と4行目:1-2,4
+1行目と4行目と10行目から20行目:1,4,10-20
+<pre data-line="4">
+
+ファイル名指定
+<pre data-src="myfile.js">
+
+行の範囲指定
+<pre data-src="myfile.js" data-range="1,5">
+
+ダウンロードボタン
+data-download-link-labelはダウンロードボタンに表示する文字
+<pre data-download-link data-download-link-label="ダウンロード">
+
+コピーボタン
+data-prismjs-copyはコピーボタンに表示する文字
+<pre data-prismjs-copy="コピー">
+
+文字表示
+<pre data-label="テキスト"></pre>
+
+ツールバー
+<pre data-toolbar-order="hello-world,select-code" data-label="Hello World!">
+
+<link rel= "stylesheet" href="/hikarijima/programming/Prism_js/prism.css">
+<script src="/hikarijima/programming/Prism_js/prism.js"></script>
+<pre class="line-numbers" data-toolbar-order="select-code" data-prismjs-copy="コピー" data-download-link data-download-link-label="ダウンロード"><code class="language-Markup"></code></pre>
+
+<link rel= "stylesheet" href="/hikarijima/programming/Prism_js/prism.css">
+<script src="/hikarijima/programming/Prism_js/prism.js"></script>
+<pre data-src="" class="line-numbers" data-toolbar-order="select-code" data-prismjs-copy="コピー" data-download-link data-download-link-label="ダウンロード"></pre>

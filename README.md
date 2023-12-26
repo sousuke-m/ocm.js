@@ -4,3 +4,4 @@ ocmはオリジナルコンテキストメニュー(Original Context Menu)の略
 ## OCM.jsのダウンロード
 [ダウンロード](https://sousuke-m.github.io/ocm.js/site/download/index.html)
 ## OCM.jsの使い方
+[使い方](https://sousuke-m.github.io/ocm.js/site/sample/index.html)

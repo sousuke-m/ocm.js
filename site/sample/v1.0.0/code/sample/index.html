@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v1.0.0またはv1.0.0 mini|サンプル|OCM.js</title>
+    <script src="../../ocm.js"></script>
+    <style>
+        html,
+        body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        #ocm_context_menu {
+            border: 1px solid #000;
+            position: fixed;
+            z-index: 99999;
+            background-color: #fff;
+            display: none;
+        }
+        #ocm_context_menu ul,
+        #ocm_context_menu ul li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <div id="ocm_context_menu">
+        <ul>
+            <li onclick="document.execCommand('copy');">コピー(Ctrl + C)</li>
+            <li onclick="document.execCommand('paste');">ペースト(Ctrl + V)</li>
+            <li>OCM.jsバージョン:<span id="ocm-js-v">OCM.js読み込み中...</span></li>
+        </ul>
+    </div>
+    <main>
+        <a href="../../index.html">戻る</a>
+        サンプルページ
+    </main>
+</body>
+</html>
